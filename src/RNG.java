@@ -5,6 +5,7 @@ public class RNG {
 
         newRandomNumber = (min + (int)(Math.random() * ((max - min) + 1)));
         return newRandomNumber;
+        //FIXED - The random number was not being returned. Typo where "max" was returned.
     }
 }
 
