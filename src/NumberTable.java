@@ -9,4 +9,6 @@ public class NumberTable {
 
         return arrayNum;
         }
+        //FIXME - create unit test to check if the array is populated with random numbers.
+        //FIXME - create unit test to check if the array is populated with 200,000,000 numbers. Expecting result +-1.
 }

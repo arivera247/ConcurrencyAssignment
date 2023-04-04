@@ -23,17 +23,16 @@ public class Main {
 
 
 
-        System.out.println("Single thread time: " + singleThreadTimeCalc + " nanoseconds");
-        System.out.println("Single thread sum: " + SingleThread.singleThreadAdd(numberTableSingleThread) + " units");
-
 
         System.out.println("Multi thread time: " + multiThreadTimeCalc + " nanoseconds");
+        System.out.println("Single thread sum: " + SingleThread.singleThreadAdd(numberTableSingleThread) + " units");
+        System.out.println("Single thread time: " + singleThreadTimeCalc + " nanoseconds");
+
         //System.out.println("Multi thread sum: " + MultiThread.multiThreadAdd(numberTableMultiThread) + " units");
-        //FIXME - Multithread and SingleThread time values match, possible mixup sum and time values.
+        //FIXME - Multithread and SingleThread time values match, possible mixup sum and time values or unexpected behaviour where single thread and multithread time is the same for this operation.
         //FIXME - Error void type value present in MultiThread class. "Error:java: 'void' type not allowed here"
 
-
-
+        //FIXME - create unit test to check if MultiThread and SingleThread class return matching sums.
     }
 }
 
